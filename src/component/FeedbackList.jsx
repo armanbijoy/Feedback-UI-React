@@ -3,7 +3,7 @@ import Feedbackitem from './Feedbackitem'
 import PropTypes from 'prop-types'
 
 function FeedbackList({ feedback, handleDelete }) {
-  if (feedback || feedback.legth === 0) {
+  if (!feedback || feedback.legth === 0) {
     return <p>No Feedback</p>
   }
 
