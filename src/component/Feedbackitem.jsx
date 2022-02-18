@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 function Feedbackitem({ item, handleDelete }) {
   return (
     <Card>
-      <div className='num-display'>{item.rating}</div>
+      <div className='num-display'>{item.ratting}</div>
       <button onClick={() => handleDelete(item.id)} className='close'>
         <FaTimes color='purple' />
       </button>

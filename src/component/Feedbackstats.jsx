@@ -3,7 +3,7 @@ import React from 'react'
 export default function Feedbackstats({ feedback }) {
   let average =
     feedback.reduce((acc, cur) => {
-      return acc + cur.rating
+      return acc + cur.ratting
     }, 0) / feedback.length
 
   average = average.toFixed(1).replace(/[.,]0$/, '')
